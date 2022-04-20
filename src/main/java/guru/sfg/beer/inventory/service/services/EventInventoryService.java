@@ -1,5 +1,6 @@
 package guru.sfg.beer.inventory.service.services;
 
+import common.events.NewInventoryEvent;
 import guru.sfg.beer.inventory.service.config.JmsConfig;
 import guru.sfg.beer.inventory.service.domain.BeerInventory;
 import guru.sfg.beer.inventory.service.repositories.BeerInventoryRepository;
@@ -8,7 +9,6 @@ import guru.sfg.beer.inventory.service.web.model.BeerDto;
 import guru.sfg.beer.inventory.service.web.model.BeerInventoryDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.fate7.msscbeerservice.events.NewInventoryEvent;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

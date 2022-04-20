@@ -1,4 +1,4 @@
-package org.fate7.msscbeerservice.events;
+package common.events;
 
 import guru.sfg.beer.inventory.service.web.model.BeerDto;
 
